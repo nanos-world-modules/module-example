@@ -2,5 +2,5 @@
 mkdir build
 cd build
 cmake ..
-cmake --build . --config Releas
+cmake --build . --config Release
 ```
