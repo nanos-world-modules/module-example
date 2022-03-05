@@ -10,7 +10,8 @@ int test(lua_State *L) {
     // Which can be obtained as the returning value from Lua
     lua_pushliteral(L, "Hello World");
 
-    // Amount of values returned (lua will get our string in the stack and pass as a return value)
+    // Amount of values returned
+    // (lua will get our string in the stack and pass as a return value)
     return 1;
 }
 
@@ -22,6 +23,7 @@ extern "C" int luaopen_example (lua_State *L) {
         {NULL, NULL},
     };
 
+    // Creates the library with the functions array
     luaL_newlib(L, functions);
 
     return 1;
