@@ -16,7 +16,7 @@ int test(lua_State *L) {
 }
 
 // Definition of your custom library
-extern "C" int luaopen_example (lua_State *L) { 
+extern "C" int luaopen_example (lua_State *L) {
     // List of all custom functions
     struct luaL_Reg functions[] = {
         {"test", test},
